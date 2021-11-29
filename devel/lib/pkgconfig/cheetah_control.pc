@@ -1,0 +1,8 @@
+prefix=/home/mathewmilena/multifloor_astar/devel
+
+Name: cheetah_control
+Description: Description of cheetah_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

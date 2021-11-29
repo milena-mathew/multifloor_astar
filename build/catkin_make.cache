@@ -1,0 +1,2 @@
+Mini-Cheetah-ROS/cheetah_control:Mini-Cheetah-ROS/cheetah_description:Mini-Cheetah-ROS/cheetah_show:Mini-Cheetah-ROS/reconfigure:astar_guidedog:ros_openvino
+-DCATKIN_DEVEL_PREFIX=/home/mathewmilena/multifloor_astar/devel -DCMAKE_INSTALL_PREFIX=/home/mathewmilena/multifloor_astar/install -G Unix Makefiles

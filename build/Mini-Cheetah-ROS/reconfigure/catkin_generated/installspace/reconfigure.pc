@@ -1,0 +1,8 @@
+prefix=/home/mathewmilena/multifloor_astar/install
+
+Name: reconfigure
+Description: Description of reconfigure
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
