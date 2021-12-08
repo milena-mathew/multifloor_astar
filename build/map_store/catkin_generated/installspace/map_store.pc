@@ -1,0 +1,8 @@
+prefix=/home/mathewmilena/multifloor_astar/install
+
+Name: map_store
+Description: Description of map_store
+Version: 0.3.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

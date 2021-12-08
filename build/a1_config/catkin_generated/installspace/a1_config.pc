@@ -1,0 +1,8 @@
+prefix=/home/mathewmilena/multifloor_astar/install
+
+Name: a1_config
+Description: Description of a1_config
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/mathewmilena/multifloor_astar/install
+
+Name: namespace_mux
+Description: Description of namespace_mux
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lnamespace_mux
+Requires: roscpp rospy tf std_srvs topic_tools

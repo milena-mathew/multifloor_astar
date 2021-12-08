@@ -1,0 +1,17 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~FR_hip_pos" : \b [double] FR hip pos min: -1.047, default: 0.0, max: 0.872
+- \b "~FR_thigh_pos" : \b [double] FR thigh pos min: -0.523, default: 0.71184, max: 3.926
+- \b "~FR_calf_pos" : \b [double] FR calf pos min: -3.141, default: -1.5705, max: 3.141
+- \b "~FL_hip_pos" : \b [double] FL hip pos min: -1.047, default: 0.0, max: 0.872
+- \b "~FL_thigh_pos" : \b [double] FL thigh pos min: -0.523, default: 0.71184, max: 3.926
+- \b "~FL_calf_pos" : \b [double] FL calf pos min: -3.141, default: -1.5705, max: 3.141
+- \b "~BR_hip_pos" : \b [double] BR hip pos min: -1.047, default: 0.0, max: 0.872
+- \b "~BR_thigh_pos" : \b [double] BR thigh pos min: -0.523, default: 0.71184, max: 3.926
+- \b "~BR_calf_pos" : \b [double] BR calf pos min: -3.141, default: -1.5705, max: 3.141
+- \b "~BL_hip_pos" : \b [double] BL hip pos min: -1.047, default: 0.0, max: 0.872
+- \b "~BL_thigh_pos" : \b [double] BL thigh pos min: -0.523, default: 0.71184, max: 3.926
+- \b "~BL_calf_pos" : \b [double] BL calf pos min: -3.141, default: -1.5705, max: 3.141
+

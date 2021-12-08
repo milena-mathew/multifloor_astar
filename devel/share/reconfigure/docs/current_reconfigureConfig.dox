@@ -1,0 +1,17 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~FR_hip_cur" : \b [double] FR hip cur min: -18.0, default: 0.0, max: 18.0
+- \b "~FR_thigh_cur" : \b [double] FR thigh cur min: -18.0, default: 0.0, max: 18.0
+- \b "~FR_calf_cur" : \b [double] FR calf cur min: -18.0, default: 0.0, max: 18.0
+- \b "~FL_hip_cur" : \b [double] FL hip cur min: -18.0, default: 0.0, max: 18.0
+- \b "~FL_thigh_cur" : \b [double] FL thigh cur min: -18.0, default: 0.0, max: 18.0
+- \b "~FL_calf_cur" : \b [double] FL calf cur min: -18.0, default: 0.0, max: 18.0
+- \b "~BR_hip_cur" : \b [double] BR hip cur min: -18.0, default: 0.0, max: 18.0
+- \b "~BR_thigh_cur" : \b [double] BR thigh cur min: -18.0, default: 0.0, max: 18.0
+- \b "~BR_calf_cur" : \b [double] BR calf cur min: -18.0, default: 0.0, max: 18.0
+- \b "~BL_hip_cur" : \b [double] BL hip cur min: -18.0, default: 0.0, max: 18.0
+- \b "~BL_thigh_cur" : \b [double] BL thigh cur min: -18.0, default: 0.0, max: 18.0
+- \b "~BL_calf_cur" : \b [double] BL calf cur min: -18.0, default: 0.0, max: 18.0
+

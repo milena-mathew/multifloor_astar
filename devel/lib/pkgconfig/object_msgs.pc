@@ -1,0 +1,8 @@
+prefix=/home/mathewmilena/multifloor_astar/devel
+
+Name: object_msgs
+Description: Description of object_msgs
+Version: 0.3.0
+Cflags: -I/home/mathewmilena/multifloor_astar/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs sensor_msgs message_runtime

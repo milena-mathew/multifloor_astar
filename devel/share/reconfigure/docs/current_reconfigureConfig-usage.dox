@@ -1,0 +1,18 @@
+\subsubsection usage Usage
+\verbatim
+<node name="reconfigure" pkg="reconfigure" type="reconfigure">
+  <param name="FR_hip_cur" type="double" value="0.0" />
+  <param name="FR_thigh_cur" type="double" value="0.0" />
+  <param name="FR_calf_cur" type="double" value="0.0" />
+  <param name="FL_hip_cur" type="double" value="0.0" />
+  <param name="FL_thigh_cur" type="double" value="0.0" />
+  <param name="FL_calf_cur" type="double" value="0.0" />
+  <param name="BR_hip_cur" type="double" value="0.0" />
+  <param name="BR_thigh_cur" type="double" value="0.0" />
+  <param name="BR_calf_cur" type="double" value="0.0" />
+  <param name="BL_hip_cur" type="double" value="0.0" />
+  <param name="BL_thigh_cur" type="double" value="0.0" />
+  <param name="BL_calf_cur" type="double" value="0.0" />
+</node>
+\endverbatim
+

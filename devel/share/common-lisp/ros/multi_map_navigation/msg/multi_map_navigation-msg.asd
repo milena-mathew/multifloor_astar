@@ -1,0 +1,38 @@
+
+(cl:in-package :asdf)
+
+(defsystem "multi_map_navigation-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :actionlib_msgs-msg
+               :geometry_msgs-msg
+               :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "MultiMapNavigationAction" :depends-on ("_package_MultiMapNavigationAction"))
+    (:file "_package_MultiMapNavigationAction" :depends-on ("_package"))
+    (:file "MultiMapNavigationActionFeedback" :depends-on ("_package_MultiMapNavigationActionFeedback"))
+    (:file "_package_MultiMapNavigationActionFeedback" :depends-on ("_package"))
+    (:file "MultiMapNavigationActionGoal" :depends-on ("_package_MultiMapNavigationActionGoal"))
+    (:file "_package_MultiMapNavigationActionGoal" :depends-on ("_package"))
+    (:file "MultiMapNavigationActionResult" :depends-on ("_package_MultiMapNavigationActionResult"))
+    (:file "_package_MultiMapNavigationActionResult" :depends-on ("_package"))
+    (:file "MultiMapNavigationFeedback" :depends-on ("_package_MultiMapNavigationFeedback"))
+    (:file "_package_MultiMapNavigationFeedback" :depends-on ("_package"))
+    (:file "MultiMapNavigationGoal" :depends-on ("_package_MultiMapNavigationGoal"))
+    (:file "_package_MultiMapNavigationGoal" :depends-on ("_package"))
+    (:file "MultiMapNavigationResult" :depends-on ("_package_MultiMapNavigationResult"))
+    (:file "_package_MultiMapNavigationResult" :depends-on ("_package"))
+    (:file "MultiMapNavigationTransitionAction" :depends-on ("_package_MultiMapNavigationTransitionAction"))
+    (:file "_package_MultiMapNavigationTransitionAction" :depends-on ("_package"))
+    (:file "MultiMapNavigationTransitionActionFeedback" :depends-on ("_package_MultiMapNavigationTransitionActionFeedback"))
+    (:file "_package_MultiMapNavigationTransitionActionFeedback" :depends-on ("_package"))
+    (:file "MultiMapNavigationTransitionActionGoal" :depends-on ("_package_MultiMapNavigationTransitionActionGoal"))
+    (:file "_package_MultiMapNavigationTransitionActionGoal" :depends-on ("_package"))
+    (:file "MultiMapNavigationTransitionActionResult" :depends-on ("_package_MultiMapNavigationTransitionActionResult"))
+    (:file "_package_MultiMapNavigationTransitionActionResult" :depends-on ("_package"))
+    (:file "MultiMapNavigationTransitionFeedback" :depends-on ("_package_MultiMapNavigationTransitionFeedback"))
+    (:file "_package_MultiMapNavigationTransitionFeedback" :depends-on ("_package"))
+    (:file "MultiMapNavigationTransitionGoal" :depends-on ("_package_MultiMapNavigationTransitionGoal"))
+    (:file "_package_MultiMapNavigationTransitionGoal" :depends-on ("_package"))
+    (:file "MultiMapNavigationTransitionResult" :depends-on ("_package_MultiMapNavigationTransitionResult"))
+    (:file "_package_MultiMapNavigationTransitionResult" :depends-on ("_package"))
+  ))

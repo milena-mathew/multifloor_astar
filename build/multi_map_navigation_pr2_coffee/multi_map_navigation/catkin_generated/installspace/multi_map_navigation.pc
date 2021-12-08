@@ -1,0 +1,8 @@
+prefix=/home/mathewmilena/multifloor_astar/install
+
+Name: multi_map_navigation
+Description: Description of multi_map_navigation
+Version: 0.0.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

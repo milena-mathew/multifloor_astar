@@ -1,6 +1,0 @@
-[submodule "src/Mini-Cheetah-ROS"]
-	path = src/Mini-Cheetah-ROS
-	url = https://github.com/sevocrear/Mini-Cheetah-ROS.git
-[submodule "src/ros_openvino"]
-	path = src/ros_openvino
-	url = https://github.com/intel/ros_openvino_toolkit.git
