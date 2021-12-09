@@ -14,7 +14,6 @@ file(REMOVE_RECURSE
   "/home/mathewmilena/multifloor_astar/devel/share/roseus/ros/multi_map_navigation/msg/MultiMapNavigationTransitionResult.l"
   "/home/mathewmilena/multifloor_astar/devel/share/roseus/ros/multi_map_navigation/msg/MultiMapNavigationAction.l"
   "/home/mathewmilena/multifloor_astar/devel/share/roseus/ros/multi_map_navigation/msg/MultiMapNavigationActionResult.l"
-  "/home/mathewmilena/multifloor_astar/devel/share/roseus/ros/multi_map_navigation/srv/SetMap.l"
   "/home/mathewmilena/multifloor_astar/devel/share/roseus/ros/multi_map_navigation/manifest.l"
 )
 

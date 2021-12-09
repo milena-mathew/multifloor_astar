@@ -14,7 +14,6 @@ file(REMOVE_RECURSE
   "/home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/multi_map_navigation/msg/MultiMapNavigationTransitionResult.lisp"
   "/home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/multi_map_navigation/msg/MultiMapNavigationAction.lisp"
   "/home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/multi_map_navigation/msg/MultiMapNavigationActionResult.lisp"
-  "/home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/multi_map_navigation/srv/SetMap.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

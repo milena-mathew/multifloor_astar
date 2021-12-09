@@ -14,7 +14,6 @@ file(REMOVE_RECURSE
   "/home/mathewmilena/multifloor_astar/devel/include/multi_map_navigation/MultiMapNavigationTransitionResult.h"
   "/home/mathewmilena/multifloor_astar/devel/include/multi_map_navigation/MultiMapNavigationAction.h"
   "/home/mathewmilena/multifloor_astar/devel/include/multi_map_navigation/MultiMapNavigationActionResult.h"
-  "/home/mathewmilena/multifloor_astar/devel/include/multi_map_navigation/SetMap.h"
 )
 
 # Per-language clean rules from dependency scanning.

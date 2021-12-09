@@ -38,10 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/multi_map_navigation/srv" TYPE FILE FILES "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/multi_map_navigation/action" TYPE FILE FILES
     "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/action/MultiMapNavigation.action"
     "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/action/MultiMapNavigationTransition.action"

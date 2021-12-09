@@ -14,7 +14,6 @@ file(REMOVE_RECURSE
   "/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionResult.py"
   "/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationAction.py"
   "/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationActionResult.py"
-  "/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/_SetMap.py"
   "/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/__init__.py"
   "/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py"
 )

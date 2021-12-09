@@ -13,7 +13,6 @@ from geometry_msgs.msg import *
 from visualization_msgs.msg import *
 import yaml
 from multi_map_navigation.msg import *
-from multi_map_navigation.srv import *
 from move_base_msgs.msg import *
 from actionlib_msgs.msg import GoalStatus
 from nav_msgs.msg import OccupancyGrid as OccGrid
@@ -31,6 +30,7 @@ def calc_distance(l1, l2):
 class MultiMapNavigationDataManager(object):
     def __init__(self):
         self.ready = False
+        self.map_db = {}
         self.listener = tf.TransformListener(True, rospy.Duration(100))
         rospy.loginfo("Wait for map 1")
         #self.start_map_sub = rospy.Subscriber('map1', OccGrid, self.set_start_map)
@@ -38,8 +38,8 @@ class MultiMapNavigationDataManager(object):
         rospy.loginfo("Wait for map 2")
         #self.goal_map_sub = rospy.Subscriber('map2', OccGrid, self.set_goal_map)
         map2_data = rospy.wait_for_message('/map2', OccGrid)
-        self.set_start_map(map1_data)
-        self.set_goal_map(map2_data)
+        self.map_db["map"] = map1_data
+        self.map_db["house"] = map2_data
         self.visualization_publisher = rospy.Publisher('visualization_marker', Marker)
         #rospy.spin()
 
@@ -76,25 +76,21 @@ class MultiMapNavigationDataManager(object):
         self.ready = True
 
         self.secondary_map_publisher = rospy.Publisher("secondary_map", OccGrid, latch=True)
-        self.set_map_service = rospy.Service('~set_map', SetMap, self.set_map)
-        self.set_secondary_map_service = rospy.Service('~set_secondary_map', SetMap, self.set_secondary_map)
+        # self.set_map_service = rospy.Service('~set_map', SetMap, self.set_map)
+        print("waiting for set map")
+        rospy.wait_for_service('set_map')
+        self.set_map_service_proxy = rospy.ServiceProxy('set_map', SetMap)
+        # self.set_secondary_map_service = rospy.Service('~set_secondary_map', SetMap, self.set_secondary_map)
         rospy.loginfo("Starting")
 
-    def set_start_map(self, map):
-        self.start_map_data = map
-
-    def set_goal_map(self, map):
-        self.goal_map_data = map
 
     def get_robot_position(self):
         while not rospy.is_shutdown():
             try:
                 self.listener.waitForTransform("/map", "/base_link", rospy.Time(), rospy.Duration(100))
                 (trans,rot) = self.listener.lookupTransform('/map', '/base_link', rospy.Time())
-                print([trans, rot])
                 return [trans[0], trans[1]]
             except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException) as ex:
-                print(ex)
                 rospy.logwarn("Failed to get robot transform")
                 rospy.sleep(0.1)
         return None
@@ -110,20 +106,20 @@ class MultiMapNavigationDataManager(object):
                 rospy.sleep(0.1)
         return None
 
-    def set_map(self, msg):
-        rospy.loginfo("Setting map to " + msg.name)
-        self.select_map(msg.name)
-        return SetMapResponse()
+    # def set_map(self, msg):
+    #     rospy.loginfo("Setting map to " + msg.name)
+    #     self.select_map(msg.name)
+    #     return SetMapResponse()
 
-    def set_secondary_map(self, msg):
-        rospy.loginfo("Setting secondary map to " + msg.name)
-        self.secondary_map_data = self.goal_map_data
+    def set_secondary_map(self, name):
+        rospy.loginfo("Setting secondary map to " + name)
+        self.secondary_map_data = self.map_db["house"]
         self.secondary_map_data.info.origin.position.z = -1.0
         self.secondary_map_data.info.origin.position.x = 0.0
         self.secondary_map_data.info.origin.position.y = 0.0
 
         if (self.current_map in self.map_north):
-            yaw = self.map_north[msg.name] - self.map_north[self.current_map]
+            yaw = self.map_north[name] - self.map_north[self.current_map]
         else:
             yaw = 0
         quat = tf.transformations.quaternion_from_euler(0, 0, -yaw)
@@ -136,9 +132,10 @@ class MultiMapNavigationDataManager(object):
             pos = {}
             for loc in i["locations"]:
                 pos[loc["map"]] = loc["position"]
-            if (msg.name in pos and self.current_map in pos):
-                angle = math.atan2(pos[msg.name][1], pos[msg.name][0])
-                distance = pos[msg.name][1] * pos[msg.name][1] + pos[msg.name][0] * pos[msg.name][0]
+            if (name in pos and self.current_map in pos):
+                print("extra math")
+                angle = math.atan2(pos[name][1], pos[name][0])
+                distance = pos[name][1] * pos[name][1] + pos[name][0] * pos[name][0]
                 distance = math.sqrt(distance)
                 
                 delta_x = pos[self.current_map][0] + distance * math.cos(angle + yaw)
@@ -146,17 +143,13 @@ class MultiMapNavigationDataManager(object):
                 self.secondary_map_data.info.origin.position.x = delta_x
                 self.secondary_map_data.info.origin.position.y = delta_y
                 break
-            self.secondary_map_publisher.publish(self.secondary_map_data)
+            self.map_publisher.publish(self.secondary_map_data) # secondary_
+            rospy.sleep(5)
         return SetMapResponse()
 
     def select_map(self, name):
-        print(name)
-        if name == "start_map" :
-            self.current_map = name
-            self.current_map_data = self.start_map_data
-        else:
-            self.current_map = name
-            self.current_map_data = self.goal_map_data
+        self.current_map = name
+        self.current_map_data = self.map_db[name]
         self.map_publisher.publish(self.current_map_data)
         self.publish_markers()
 
@@ -270,7 +263,7 @@ class MultiMapNavigationDataManager(object):
                     rospy.logerr("YAML file: " + filename + " contains an invalid location which is missing a position")
                     return False
                 
-        self.start_map = "start_map"
+        self.start_map = data["start_map"]
 
         return True
 
@@ -287,18 +280,31 @@ class MultiMapNavigationNavigator():
         self.move_base.wait_for_server()
         self.action_server = actionlib.SimpleActionServer("multi_map_navigation/move", MultiMapNavigationAction,
                                                           execute_cb=self.execute_cb, auto_start=False)
-        self.pose_pub = rospy.Publisher("initialpose", PoseWithCovarianceStamped, queue_size=1)
-        print("not ready")
+        self.pose_pub = rospy.Publisher("initialpose", PoseWithCovarianceStamped)
         while not self.manager.ready:
             rospy.sleep(1.0)
-        print("ready")
+
+        msg = PoseWithCovarianceStamped()
+        msg.header.frame_id = "map"
+        msg.header.stamp = rospy.get_rostime()
+        msg.pose.pose.position.x = 0.0 # hardcoded
+        msg.pose.pose.position.y = 0.0
+        msg.pose.pose.position.z = 0.0
+        quat = tf.transformations.quaternion_from_euler(0, 0, 0)
+        msg.pose.pose.orientation.x = quat[0]
+        msg.pose.pose.orientation.y = quat[1]
+        msg.pose.pose.orientation.z = quat[2]
+        msg.pose.pose.orientation.w = quat[3]
+        self.manager.set_map_service_proxy(self.manager.current_map_data, msg)
+
         self.action_server.start()
+
 
     def execute_cb(self, goal):
         #Create a graph of all the wormholes. The nodes are the locations.
         graph = {'start': {}, 'end': {}}
 
-        print("executed something")
+
         for w in self.manager.wormholes:
             #The cost of moving through a wormhole is nothing. In the future, this
             #could be non-zero if there is an object such as a door or elevator that
@@ -316,7 +322,7 @@ class MultiMapNavigationNavigator():
                         if (direction == "exit" or direction == "double"):
                             traverse[str(j) + "_" + w["name"]] = 100.0
                 graph[str(l) + "_" + w["name"]] = traverse
-        print("wormhole")
+
         robot_pos = self.manager.get_robot_position()
         
         #Create the graph for each of the wormholes
@@ -351,9 +357,7 @@ class MultiMapNavigationNavigator():
                                   goal.target_pose.pose.position.y], robot_pos)
             graph["start"]["end"] = dist
             graph["end"]["start"] = dist
-        
-        print(graph)
-        # path = self.shortest_path(graph, "start", "end")[1:] #skip "start"
+
         path = ["0_elevator", "end"]
 
         offset = []
@@ -363,18 +367,16 @@ class MultiMapNavigationNavigator():
         old_angle = None
 
         while (path[0] != "end"):
-            print(path[0])
             #wormhole
             name = path[0][path[0].find("_") + 1:]
-            #print name
             wormhole = None
             for i in self.manager.wormholes:
                 if (i["name"] == name):
                     wormhole = i
-            #print wormhole
 
-            location = wormhole["locations"][0] # change back if multiple elevators [int(path[0].split("_")[0])]
+            location = wormhole["locations"][int(path[0].split("_")[0])]
             pos = location["position"]
+
             mapname = location["map"]
             north = self.manager.map_north[mapname]
             wormhole_type = "normal"
@@ -405,6 +407,7 @@ class MultiMapNavigationNavigator():
             #We have switched maps in the wormhole
             if (mapname != self.manager.current_map):
                 #Create and publish the new pose for AMCL
+                print("Wormhole switched maps")
                 msg = PoseWithCovarianceStamped()
                 msg.header.frame_id = "map"
                 msg.header.stamp = rospy.get_rostime()
@@ -460,6 +463,7 @@ class MultiMapNavigationNavigator():
                 #We need to do driving to get to the next wormhole
                 #print pos
                 #Create the goal for the next waypoint (at the target)
+                print("Need to drive a bit")
                 msg = MoveBaseGoal()
                 msg.target_pose.header.stamp = rospy.get_rostime()
                 msg.target_pose.header.frame_id = "map"
@@ -479,33 +483,35 @@ class MultiMapNavigationNavigator():
                 offset[0] = offset[0] - pos[0]
                 offset[1] = offset[1] - pos[1]
             else:
+                print("we've arrived!")
                 rospy.loginfo("Skipped move base because the goal location is the current location")
 
             if (wormhole_type != "normal" and wormhole_goal != None):
+                print("jumped into this wormhole if")
                 rospy.loginfo("Transition: " + str(wormhole_type))
                 cli = self.manager.transition_action_clients[wormhole_type]
-                #print wormhole_goal
                 cli.send_goal(wormhole_goal)
                 cli.wait_for_result()
-            
+            print("hit a goal")
+            self.set_second_map("house")
             #print "done"
             old_pos = pos
             old_angle = angle
             old_north = north
 
             path = path[1:]
-            print(path)
-        
+                  
+
 
         #Get to the end point
+        print("trying to move to goal")
         msg = MoveBaseGoal()
         msg.target_pose = goal.target_pose
         self.go_to_goal(msg, None)
         self.action_server.set_succeeded(MultiMapNavigationResult())
 
     def go_to_goal(self, msg, radius=None):
-        print(msg)
-        #print "Wait for move base"
+        print("goal", msg)
         bad = True
         bad_count = 0
         while not rospy.is_shutdown() and bad:
@@ -553,6 +559,91 @@ class MultiMapNavigationNavigator():
                         if (self.move_base.get_state() == GoalStatus.SUCCEEDED):
                             bad = False
                     bad = True #Make sure we are still bad for actual motion
+
+    def set_second_map(self, name):
+        rospy.loginfo("Setting secondary map to " + name)
+        # self.secondary_map_data = self.manager.map_db["house"]
+        # self.secondary_map_data.info.origin.position.z = -1.0
+        # self.secondary_map_data.info.origin.position.x = 0.0
+        # self.secondary_map_data.info.origin.position.y = 0.0
+
+        # if (self.manager.current_map in self.manager.map_north):
+        #     yaw = self.manager.map_north[name] - self.manager.map_north[self.manager.current_map]
+        # else:
+        #     yaw = 0
+        # quat = tf.transformations.quaternion_from_euler(0, 0, -yaw)
+        # self.secondary_map_data.info.origin.orientation.x = quat[0]
+        # self.secondary_map_data.info.origin.orientation.y = quat[1]
+        # self.secondary_map_data.info.origin.orientation.z = quat[2]
+        # self.secondary_map_data.info.origin.orientation.w = quat[3]
+            
+        for i in self.manager.wormholes:
+            wormhole = i # only works for one wormhole
+
+        location = wormhole["locations"][1]
+        pos = location["position"]
+
+        msg = PoseWithCovarianceStamped()
+        msg.header.frame_id = "map"
+        msg.header.stamp = rospy.get_rostime()
+        
+        offset_angle = 0.0
+        offset_radius = 0.0
+        # if (radius):
+        #     offset_angle = math.atan2(offset[1], offset[0])
+        #     offset_radius = math.sqrt(offset[0] * offset[0] + offset[1] * offset[1])
+
+        #     offset_angle += north - old_north
+        north = self.manager.map_north[name]
+        old_north = self.manager.map_north["map"] #hardcoded
+        angle = 0
+
+        msg.pose.pose.position.x = pos[0] + math.cos(offset_angle) * offset_radius
+        msg.pose.pose.position.y = pos[1] + math.sin(offset_angle) * offset_radius
+        msg.pose.pose.position.z = 0.0
+        
+        roll, pitch, yaw = tf.transformations.euler_from_quaternion( \
+            self.manager.get_robot_rotation())
+        #print yaw
+        yaw += north - old_north
+        if (angle):
+            yaw = angle
+        quat = tf.transformations.quaternion_from_euler(0, 0, yaw)
+        msg.pose.pose.orientation.x = quat[0]
+        msg.pose.pose.orientation.y = quat[1]
+        msg.pose.pose.orientation.z = quat[2]
+        msg.pose.pose.orientation.w = quat[3]
+
+        msg.pose.covariance = [0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                                0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 
+                                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                                0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+                                0.0, 0.0, 0.0, 0.0, 0.0, 
+                                0.06853891945200942]
+
+        #print msg
+        print(msg)
+        self.manager.select_map(name)
+        
+        #self.pose_pub.publish(msg)
+        #rospy.sleep(5)
+        #Select the new map
+        try:
+            self.manager.set_map_service_proxy(self.manager.current_map_data, msg)
+        except rospy.ServiceException as exc:
+            print("Service did not process request: " + str(exc)[:200])
+        
+        rospy.sleep(10) #FIXME: come up with an alternative approach to know when AMCL is done
+
+        offset = self.manager.get_robot_position()
+        offset[0] = offset[0] - pos[0]
+        offset[1] = offset[1] - pos[1]
+
+        rospy.loginfo("Wait for movebase")
+        self.move_base.wait_for_server()
+        rospy.loginfo("Done")
+        return SetMapResponse()
 
 if (__name__ == "__main__"):
     rospy.init_node('multi_map_navigation')

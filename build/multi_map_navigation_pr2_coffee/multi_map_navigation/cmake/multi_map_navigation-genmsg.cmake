@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "multi_map_navigation: 14 messages, 1 services")
+message(STATUS "multi_map_navigation: 14 messages, 0 services")
 
 set(MSG_I_FLAGS "-Imulti_map_navigation:/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg")
 
@@ -25,11 +25,6 @@ add_custom_target(_multi_map_navigation_generate_messages_check_deps_${_filename
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionFeedback.msg" NAME_WE)
 add_custom_target(_multi_map_navigation_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "multi_map_navigation" "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionFeedback.msg" "actionlib_msgs/GoalID:multi_map_navigation/MultiMapNavigationTransitionFeedback:actionlib_msgs/GoalStatus:std_msgs/Header"
-)
-
-get_filename_component(_filename "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv" NAME_WE)
-add_custom_target(_multi_map_navigation_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "multi_map_navigation" "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv" ""
 )
 
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionResult.msg" NAME_WE)
@@ -184,12 +179,6 @@ _generate_msg_cpp(multi_map_navigation
 )
 
 ### Generating Services
-_generate_srv_cpp(multi_map_navigation
-  "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/multi_map_navigation
-)
 
 ### Generating Module File
 _generate_module_cpp(multi_map_navigation
@@ -206,8 +195,6 @@ add_dependencies(multi_map_navigation_generate_messages multi_map_navigation_gen
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionFeedback.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_cpp _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionFeedback.msg" NAME_WE)
-add_dependencies(multi_map_navigation_generate_messages_cpp _multi_map_navigation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_cpp _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionResult.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_cpp _multi_map_navigation_generate_messages_check_deps_${_filename})
@@ -329,12 +316,6 @@ _generate_msg_eus(multi_map_navigation
 )
 
 ### Generating Services
-_generate_srv_eus(multi_map_navigation
-  "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/multi_map_navigation
-)
 
 ### Generating Module File
 _generate_module_eus(multi_map_navigation
@@ -351,8 +332,6 @@ add_dependencies(multi_map_navigation_generate_messages multi_map_navigation_gen
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionFeedback.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_eus _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionFeedback.msg" NAME_WE)
-add_dependencies(multi_map_navigation_generate_messages_eus _multi_map_navigation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_eus _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionResult.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_eus _multi_map_navigation_generate_messages_check_deps_${_filename})
@@ -474,12 +453,6 @@ _generate_msg_lisp(multi_map_navigation
 )
 
 ### Generating Services
-_generate_srv_lisp(multi_map_navigation
-  "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/multi_map_navigation
-)
 
 ### Generating Module File
 _generate_module_lisp(multi_map_navigation
@@ -496,8 +469,6 @@ add_dependencies(multi_map_navigation_generate_messages multi_map_navigation_gen
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionFeedback.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_lisp _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionFeedback.msg" NAME_WE)
-add_dependencies(multi_map_navigation_generate_messages_lisp _multi_map_navigation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_lisp _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionResult.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_lisp _multi_map_navigation_generate_messages_check_deps_${_filename})
@@ -619,12 +590,6 @@ _generate_msg_nodejs(multi_map_navigation
 )
 
 ### Generating Services
-_generate_srv_nodejs(multi_map_navigation
-  "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/multi_map_navigation
-)
 
 ### Generating Module File
 _generate_module_nodejs(multi_map_navigation
@@ -641,8 +606,6 @@ add_dependencies(multi_map_navigation_generate_messages multi_map_navigation_gen
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionFeedback.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_nodejs _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionFeedback.msg" NAME_WE)
-add_dependencies(multi_map_navigation_generate_messages_nodejs _multi_map_navigation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_nodejs _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionResult.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_nodejs _multi_map_navigation_generate_messages_check_deps_${_filename})
@@ -764,12 +727,6 @@ _generate_msg_py(multi_map_navigation
 )
 
 ### Generating Services
-_generate_srv_py(multi_map_navigation
-  "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/multi_map_navigation
-)
 
 ### Generating Module File
 _generate_module_py(multi_map_navigation
@@ -786,8 +743,6 @@ add_dependencies(multi_map_navigation_generate_messages multi_map_navigation_gen
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionFeedback.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_py _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionFeedback.msg" NAME_WE)
-add_dependencies(multi_map_navigation_generate_messages_py _multi_map_navigation_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/mathewmilena/multifloor_astar/src/multi_map_navigation_pr2_coffee/multi_map_navigation/srv/SetMap.srv" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_py _multi_map_navigation_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/mathewmilena/multifloor_astar/devel/share/multi_map_navigation/msg/MultiMapNavigationTransitionActionResult.msg" NAME_WE)
 add_dependencies(multi_map_navigation_generate_messages_py _multi_map_navigation_generate_messages_check_deps_${_filename})

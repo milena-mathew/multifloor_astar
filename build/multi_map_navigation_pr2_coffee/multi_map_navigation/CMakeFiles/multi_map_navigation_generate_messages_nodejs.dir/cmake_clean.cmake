@@ -14,7 +14,6 @@ file(REMOVE_RECURSE
   "/home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/multi_map_navigation/msg/MultiMapNavigationTransitionResult.js"
   "/home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/multi_map_navigation/msg/MultiMapNavigationAction.js"
   "/home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/multi_map_navigation/msg/MultiMapNavigationActionResult.js"
-  "/home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/multi_map_navigation/srv/SetMap.js"
 )
 
 # Per-language clean rules from dependency scanning.
