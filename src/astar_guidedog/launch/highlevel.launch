@@ -1,0 +1,9 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+
+    <include file="$(find astar)/launch/astar.launch" />
+
+    <node pkg="astar" name="control" type="control.py" output="screen" />
+
+
+</launch>

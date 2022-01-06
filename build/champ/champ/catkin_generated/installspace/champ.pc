@@ -1,8 +1,0 @@
-prefix=/home/mathewmilena/multifloor_astar/install
-
-Name: champ
-Description: Description of champ
-Version: 0.1.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: 

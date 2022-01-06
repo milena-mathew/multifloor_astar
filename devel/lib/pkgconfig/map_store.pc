@@ -1,8 +1,0 @@
-prefix=/home/mathewmilena/multifloor_astar/devel
-
-Name: map_store
-Description: Description of map_store
-Version: 0.3.1
-Cflags: -I/home/mathewmilena/multifloor_astar/devel/include
-Libs: -L${prefix}/lib 
-Requires: 
