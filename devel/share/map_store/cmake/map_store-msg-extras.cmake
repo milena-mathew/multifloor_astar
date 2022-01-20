@@ -1,2 +1,0 @@
-set(map_store_MESSAGE_FILES "/home/mathewmilena/multifloor_astar/src/map_store/msg/MapListEntry.msg")
-set(map_store_SERVICE_FILES "/home/mathewmilena/multifloor_astar/src/map_store/srv/DeleteMap.srv;/home/mathewmilena/multifloor_astar/src/map_store/srv/ListMaps.srv;/home/mathewmilena/multifloor_astar/src/map_store/srv/PublishMap.srv;/home/mathewmilena/multifloor_astar/src/map_store/srv/RenameMap.srv;/home/mathewmilena/multifloor_astar/src/map_store/srv/SaveMap.srv;/home/mathewmilena/multifloor_astar/src/map_store/srv/SetOrigin.srv")

@@ -1,8 +1,0 @@
-prefix=/home/mathewmilena/multifloor_astar/install
-
-Name: warehouse_ros
-Description: Description of warehouse_ros
-Version: 0.8.4
-Cflags: -I${prefix}/include -I/usr/include
-Libs: -L${prefix}/lib -lwarehouse_ros /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/lib/x86_64-linux-gnu/libboost_thread.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so /usr/lib/x86_64-linux-gnu/libboost_atomic.so /usr/lib/x86_64-linux-gnu/libpthread.so
-Requires: roscpp geometry_msgs rostime std_msgs

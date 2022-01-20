@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories("/usr/local/include/lcm/")   # lcm includes
 # include_directories("/home/anxing/work/catkin_ws/src/mini_cheetah_sim/cheetah_description/lcm_type")
+
 ########### 项目名称
 project(astar)
 

@@ -16,4 +16,8 @@
     ################ start rviz ################
     <node pkg="rviz" type="rviz" name="rviz" args="-d $(find astar)/rviz/astar.rviz"/>
 
+<<<<<<< HEAD
 </launch>
+=======
+</launch>
+>>>>>>> 7ae56d8c0d8ef0236fbfe80b2bdb90ddfa68ca47

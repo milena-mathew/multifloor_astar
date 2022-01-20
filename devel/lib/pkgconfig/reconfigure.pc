@@ -1,8 +1,0 @@
-prefix=/home/mathewmilena/multifloor_astar/devel
-
-Name: reconfigure
-Description: Description of reconfigure
-Version: 0.0.0
-Cflags: -I/home/mathewmilena/multifloor_astar/devel/include
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,8 +1,0 @@
-prefix=/home/mathewmilena/multifloor_astar/devel
-
-Name: champ
-Description: Description of champ
-Version: 0.1.0
-Cflags: -I/home/mathewmilena/multifloor_astar/src/champ/champ/include -I/home/mathewmilena/multifloor_astar/src/champ/champ/include/champ
-Libs: -L${prefix}/lib 
-Requires: 
