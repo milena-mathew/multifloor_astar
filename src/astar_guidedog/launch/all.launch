@@ -1,0 +1,60 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+
+    <node pkg="map_server" name="map_server" type="map_server" args="$(find astar)/maps/map.yaml"/>
+
+    <!-- ################ start astar node ################ -->
+    <node pkg="astar" type="astar" name="astar" output="screen">
+        <param name="Euclidean" value="true"/>
+        <param name="OccupyThresh" value="-1"/>
+        <param name="InflateRadius" value="0.20"/>
+        <param name="rate" value="10"/>
+    </node>
+
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+        <arg name="align_depth" value="true"/>
+        <arg name="color_width" value="960"/>
+        <arg name="color_height" value="540"/>
+    </include>
+
+    <!-- <node name="human_detection" pkg="ros_openvino" type="human_detection" output="screen">
+        <remap from="/human_detection/input_image" to="/camera/color/image_raw" />
+        <remap from="/human_detection/input_depth" to="/camera/aligned_depth_to_color/image_raw" />
+        <remap from="/human_detection/camera_info" to="/camera/aligned_depth_to_color/camera_info" />
+        <param name="threshold"         value="0.5" />
+        <param name="target"            value="CPU" /> -->
+        <!-- <change CPU or GPU here> -->
+        <!-- <param name="model_network"     value="$(find ros_openvino)/models/FP16/mobilenet-ssd/mobilenet-ssd.xml" />
+        <param name="model_weights"     value="$(find ros_openvino)/models/FP16/mobilenet-ssd/mobilenet-ssd.bin" />
+        <param name="model_labels"      value="$(find ros_openvino)/models/FP16/mobilenet-ssd/mobilenet-ssd.labels" />
+        <param name="model_colors"      value="$(find ros_openvino)/models/FP16/mobilenet-ssd/mobilenet-ssd.colors" />
+        <param name="output_as_image"   value="true" />
+        <param name="output_as_list"    value="true" />
+        <param name="depth_analysis"    value="true" />
+        <param name="output_as_markers" value="true" />
+        <param name="output_as_makerslabel" value="true" />
+        <param name="output_as_boxlist" value="false" />
+    </node> -->
+
+    <param name="fixed_frame" value="/map"/>
+    <param name="marker_display_lifetime_" value="0.2"/>
+    <param name="scan_frequency" value="15"/>
+    <node pkg="integrator" name="head_publisher" type="head_publisher.py" output="screen" />
+    <node pkg="laser_tracker" name="human_tracker" type="human_track.py" output="screen"/>
+    <node pkg="rosserial_python" name="ros_serial" type="serial_node.py" output="screen"/>
+    <node pkg="integrator" name="force_arrow_publisher" type="force_arrow_publisher.py" output="screen"/>
+
+    <arg name="model" />
+    <arg name="gui" default="False" />
+    <param name="robot_description" textfile="$(find cheetah_description)/xacro/mini_cheetah.urdf" />
+    <param name="use_gui" value="$(arg gui)"/>
+    
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+    <!-- ################ start rviz ################ -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find astar)/rviz/astar.rviz"/>
+
+    <node pkg="astar" name="control" type="control.py" output="screen" />
+
+
+</launch>

@@ -6,7 +6,7 @@ import rospy
 import actionlib
 import sys
 from multi_map_navigation.msg import *
-from multi_map_navigation.srv import *
+# from multi_map_navigation.srv import *
 
 
 class TestClient():

@@ -41,7 +41,6 @@ f79b3627b41d303423cf12f889d7100d /home/mathewmilena/multifloor_astar/devel/inclu
 59ebc118413cac68c05b1e943e7faaa7 /home/mathewmilena/multifloor_astar/devel/include/multi_map_navigation/MultiMapNavigationTransitionFeedback.h
 8b884f4bdde99884f2f9cbef280a4e5a /home/mathewmilena/multifloor_astar/devel/include/multi_map_navigation/MultiMapNavigationTransitionGoal.h
 5cdc20a2f8cce4e766fc3d368ad548d6 /home/mathewmilena/multifloor_astar/devel/include/multi_map_navigation/MultiMapNavigationTransitionResult.h
-67cb73f20e986c112747fd374cc54ad7 /home/mathewmilena/multifloor_astar/devel/include/multi_map_navigation/SetMap.h
 8f7124782363269ffec1ec2a91f3bf20 /home/mathewmilena/multifloor_astar/devel/include/navfn/MakeNavPlan.h
 31c2a473eb9d3eade14d4c1b26fb2304 /home/mathewmilena/multifloor_astar/devel/include/navfn/SetCostmap.h
 54bf8d6e7f4c050d4a058a3abc2c8f08 /home/mathewmilena/multifloor_astar/devel/include/object_msgs/ClassifyObject.h
@@ -50,8 +49,8 @@ d8fba4b21a6903b0d19e63a768cfd68c /home/mathewmilena/multifloor_astar/devel/inclu
 785415a248a3805b59afe38487316887 /home/mathewmilena/multifloor_astar/devel/include/object_msgs/ObjectInBox.h
 c6b827e7bb900802003d2352bb6e65f6 /home/mathewmilena/multifloor_astar/devel/include/object_msgs/Objects.h
 dc1fec1499c9bdec550768ba00b70642 /home/mathewmilena/multifloor_astar/devel/include/object_msgs/ObjectsInBoxes.h
-f8ff37b18b4e20fd6a22ff822a25ce82 /home/mathewmilena/multifloor_astar/devel/include/reconfigure/current_reconfigureConfig.h
-c6bb24db84bbc21a89b4ffa133abd9b4 /home/mathewmilena/multifloor_astar/devel/include/reconfigure/position_reconfigureConfig.h
+5d80e1dbb3c4a5c2308f0325c116034e /home/mathewmilena/multifloor_astar/devel/include/reconfigure/current_reconfigureConfig.h
+7cfe02e9f9dd156a3e3d1e3c26f5b8c4 /home/mathewmilena/multifloor_astar/devel/include/reconfigure/position_reconfigureConfig.h
 22075583390dc2637c6ff708823524e8 /home/mathewmilena/multifloor_astar/devel/include/yocs_velocity_smoother/paramsConfig.h
 eb2671a6af0431259d31daa2e2a97c90 /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/base_local_planner/msg/_Position2DInt.py
 50403089c40ec9d73a95a967e00d9354 /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/base_local_planner/msg/__init__.py
@@ -91,8 +90,6 @@ c2bd0a90a0b3fb1c28716e0f7f4409be /home/mathewmilena/multifloor_astar/devel/lib/p
 96ebbabf6850e5bc1f98c1f708df130a /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionGoal.py
 5894cef06e05347896d23b00782ae4ca /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionResult.py
 4f36f8998b80ad877e90cbd2a5b75e2f /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/__init__.py
-111bedfd5c07ae5b562f90b02819e14a /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/_SetMap.py
-d12744101696d1960ef77e87a42b91e7 /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py
 977baab1cd9d3e92cdd0e382c5128779 /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/navfn/srv/_MakeNavPlan.py
 7308a54d4232521eebc33d18c58dd735 /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/navfn/srv/_SetCostmap.py
 4bfd3e8ec11fcb4380417222a1d3ca91 /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/navfn/srv/__init__.py
@@ -136,7 +133,6 @@ c06afee6365ed063df21569e47c21e1a /home/mathewmilena/multifloor_astar/devel/share
 ff9ca167f8818181e19f3ea74b343685 /home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/multi_map_navigation/msg/MultiMapNavigationTransitionFeedback.lisp
 8710e99100e9f51755f0e9d1a39b310b /home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/multi_map_navigation/msg/MultiMapNavigationTransitionGoal.lisp
 7df27101a999a41c060e284a43838bac /home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/multi_map_navigation/msg/MultiMapNavigationTransitionResult.lisp
-514c9e6ac9314ffc807609ac8a672d0e /home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/multi_map_navigation/srv/SetMap.lisp
 08817de0be263abdda5305331d9baf50 /home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/navfn/srv/MakeNavPlan.lisp
 c342f1cf8396c88dcca7983c7682164c /home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/navfn/srv/SetCostmap.lisp
 0ba6a7f3ebbef5fc7d58ba634a98baf0 /home/mathewmilena/multifloor_astar/devel/share/common-lisp/ros/object_msgs/msg/Object.lisp
@@ -177,7 +173,6 @@ b003fc065120651911636735f3d8c330 /home/mathewmilena/multifloor_astar/devel/share
 2d57f5b53437a57b32ad43ab934036e3 /home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/multi_map_navigation/msg/MultiMapNavigationTransitionFeedback.js
 aa365e04e9e7dc99487c23328ca37e2a /home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/multi_map_navigation/msg/MultiMapNavigationTransitionGoal.js
 22b8a5300f3a04c425558da5753b4ab4 /home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/multi_map_navigation/msg/MultiMapNavigationTransitionResult.js
-daffa0e4638519eaf301baf2864166a1 /home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/multi_map_navigation/srv/SetMap.js
 006ceffa8556d1ef77a748d7751faf57 /home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/navfn/srv/MakeNavPlan.js
 f59fb39a51c370d38fcf744e6aea40e4 /home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/navfn/srv/SetCostmap.js
 7fe5fb7a027750aa5910e363d53a4dba /home/mathewmilena/multifloor_astar/devel/share/gennodejs/ros/object_msgs/msg/Object.js
@@ -223,7 +218,6 @@ ed9ae779f3fa6ef4312bb32e91e52385 /home/mathewmilena/multifloor_astar/devel/share
 26f6731246f566f4ad7f3ab16bf77433 /home/mathewmilena/multifloor_astar/devel/share/roseus/ros/multi_map_navigation/msg/MultiMapNavigationTransitionFeedback.l
 bc8b8fa3e4ecd1a37aeae2f3c820d13b /home/mathewmilena/multifloor_astar/devel/share/roseus/ros/multi_map_navigation/msg/MultiMapNavigationTransitionGoal.l
 0b2740da67f6ed422052b662054d6db5 /home/mathewmilena/multifloor_astar/devel/share/roseus/ros/multi_map_navigation/msg/MultiMapNavigationTransitionResult.l
-dbed7a881c3fa51aebed7a36eeaf883c /home/mathewmilena/multifloor_astar/devel/share/roseus/ros/multi_map_navigation/srv/SetMap.l
 df0664a15ba771425a45f2ca2ac1936a /home/mathewmilena/multifloor_astar/devel/share/roseus/ros/navfn/manifest.l
 458a7eac79b34405f59b64a1b7ab5cda /home/mathewmilena/multifloor_astar/devel/share/roseus/ros/navfn/srv/MakeNavPlan.l
 1e4fe8116dcadde48c8f52f2d8d6fe17 /home/mathewmilena/multifloor_astar/devel/share/roseus/ros/navfn/srv/SetCostmap.l

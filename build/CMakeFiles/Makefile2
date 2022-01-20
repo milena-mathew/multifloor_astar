@@ -3204,7 +3204,7 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 
 # Build rule for subdir invocation for target.
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_genpy.dir/rule
@@ -3247,12 +3247,12 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_nodejs.dir/all: multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/_multi_map_navigation_generate_messages_check_deps_MultiMapNavigationAction.dir/all
 	$(MAKE) -f multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_nodejs.dir/build.make multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_nodejs.dir/depend
 	$(MAKE) -f multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_nodejs.dir/build.make multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=71,72,73 "Built target multi_map_navigation_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=71,72,73,74 "Built target multi_map_navigation_generate_messages_nodejs"
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_nodejs.dir/rule
@@ -3343,12 +3343,12 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/all: multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/_multi_map_navigation_generate_messages_check_deps_MultiMapNavigationAction.dir/all
 	$(MAKE) -f multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/build.make multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/depend
 	$(MAKE) -f multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/build.make multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=74,75,76,77 "Built target multi_map_navigation_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=75,76,77 "Built target multi_map_navigation_generate_messages_py"
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/rule
@@ -3391,12 +3391,12 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_eus.dir/all: multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/_multi_map_navigation_generate_messages_check_deps_MultiMapNavigationAction.dir/all
 	$(MAKE) -f multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_eus.dir/build.make multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_eus.dir/depend
 	$(MAKE) -f multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_eus.dir/build.make multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=64,65,66,67 "Built target multi_map_navigation_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=65,66,67 "Built target multi_map_navigation_generate_messages_eus"
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_eus.dir/rule
@@ -3428,7 +3428,7 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 
 # Build rule for subdir invocation for target.
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_geneus.dir/rule
@@ -3460,7 +3460,7 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 
 # Build rule for subdir invocation for target.
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_gencpp.dir/rule
@@ -3631,12 +3631,12 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_cpp.dir/all: multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/_multi_map_navigation_generate_messages_check_deps_MultiMapNavigationAction.dir/all
 	$(MAKE) -f multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_cpp.dir/build.make multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_cpp.dir/depend
 	$(MAKE) -f multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_cpp.dir/build.make multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=61,62,63 "Built target multi_map_navigation_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=61,62,63,64 "Built target multi_map_navigation_generate_messages_cpp"
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_cpp.dir/rule
@@ -3933,7 +3933,7 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 
 # Build rule for subdir invocation for target.
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_gennodejs.dir/rule
@@ -10285,7 +10285,7 @@ navigation/costmap_2d/CMakeFiles/static_tests.dir/all: navigation/costmap_2d/CMa
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/static_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/static_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/static_tests.dir/rule
@@ -10320,7 +10320,7 @@ navigation/costmap_2d/CMakeFiles/inflation_tests.dir/all: navigation/costmap_2d/
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/inflation_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/inflation_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/inflation_tests.dir/rule
@@ -10487,7 +10487,7 @@ navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/all: navigation/costmap_2d/C
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/obstacle_tests.dir/rule
@@ -10824,7 +10824,7 @@ navigation/costmap_2d/CMakeFiles/layers.dir/all: navigation/costmap_2d/CMakeFile
 navigation/costmap_2d/CMakeFiles/layers.dir/all: navigation/costmap_2d/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/all
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/layers.dir/build.make navigation/costmap_2d/CMakeFiles/layers.dir/depend
 	$(MAKE) -f navigation/costmap_2d/CMakeFiles/layers.dir/build.make navigation/costmap_2d/CMakeFiles/layers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=42 "Built target layers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=42,43 "Built target layers"
 .PHONY : navigation/costmap_2d/CMakeFiles/layers.dir/all
 
 # Include target in all.
@@ -10834,7 +10834,7 @@ all: navigation/costmap_2d/CMakeFiles/layers.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/costmap_2d/CMakeFiles/layers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/costmap_2d/CMakeFiles/layers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/costmap_2d/CMakeFiles/layers.dir/rule
@@ -11454,7 +11454,7 @@ navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/rule
@@ -11481,12 +11481,12 @@ clean: navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gte
 navigation/base_local_planner/CMakeFiles/line_iterator.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/line_iterator.dir/build.make navigation/base_local_planner/CMakeFiles/line_iterator.dir/depend
 	$(MAKE) -f navigation/base_local_planner/CMakeFiles/line_iterator.dir/build.make navigation/base_local_planner/CMakeFiles/line_iterator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=43 "Built target line_iterator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num= "Built target line_iterator"
 .PHONY : navigation/base_local_planner/CMakeFiles/line_iterator.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/line_iterator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/line_iterator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/line_iterator.dir/rule
@@ -11747,7 +11747,7 @@ navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base_local_planner_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule
@@ -12119,7 +12119,7 @@ navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: navig
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner_utest.dir/rule
@@ -12270,7 +12270,7 @@ all: navigation/base_local_planner/CMakeFiles/point_grid.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/point_grid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/point_grid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/point_grid.dir/rule
@@ -12381,7 +12381,7 @@ all: navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/base_local_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/base_local_planner.dir/rule
@@ -12500,7 +12500,7 @@ all: navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/rule
@@ -12638,7 +12638,7 @@ all: navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/carrot_planner/CMakeFiles/carrot_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/carrot_planner/CMakeFiles/carrot_planner.dir/rule
@@ -12762,7 +12762,7 @@ navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_ro
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/rule
@@ -12798,7 +12798,7 @@ navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/all: navigation/cl
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/clear_tester.dir/rule
@@ -12942,7 +12942,7 @@ all: navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/rule
@@ -12974,7 +12974,7 @@ navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.di
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/rule
@@ -13038,7 +13038,7 @@ navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_ro
 
 # Build rule for subdir invocation for target.
 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/rule
@@ -13179,7 +13179,7 @@ all: navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/rule
@@ -13346,7 +13346,7 @@ all: navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/rule
@@ -13786,7 +13786,7 @@ all: navigation/navfn/CMakeFiles/navtest.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navtest.dir/rule
@@ -13931,7 +13931,7 @@ all: navigation/navfn/CMakeFiles/navfn.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn.dir/rule
@@ -14012,7 +14012,7 @@ all: navigation/navfn/CMakeFiles/navfn_node.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/navfn/CMakeFiles/navfn_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/CMakeFiles/navfn_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/navfn/CMakeFiles/navfn_node.dir/rule
@@ -14103,7 +14103,7 @@ navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/all: navigation/navfn/test/
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/run_tests_navfn.dir/rule
@@ -14135,7 +14135,7 @@ navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/all: navigation/navfn
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest.dir/rule
@@ -14171,7 +14171,7 @@ navigation/navfn/test/CMakeFiles/path_calc_test.dir/all: navigation/navfn/CMakeF
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/path_calc_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/path_calc_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/path_calc_test.dir/rule
@@ -14299,7 +14299,7 @@ navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/all: n
 
 # Build rule for subdir invocation for target.
 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/navfn/test/CMakeFiles/run_tests_navfn_gtest_path_calc_test.dir/rule
@@ -14477,7 +14477,7 @@ all: navigation/global_planner/CMakeFiles/global_planner.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/global_planner/CMakeFiles/global_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/global_planner/CMakeFiles/global_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/global_planner/CMakeFiles/global_planner.dir/rule
@@ -14597,7 +14597,7 @@ all: navigation/global_planner/CMakeFiles/planner.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/global_planner/CMakeFiles/planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/global_planner/CMakeFiles/planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/global_planner/CMakeFiles/planner.dir/rule
@@ -14735,7 +14735,7 @@ all: navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/rotate_recovery/CMakeFiles/rotate_recovery.dir/rule
@@ -14902,7 +14902,7 @@ all: navigation/move_base/CMakeFiles/move_base_node.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/move_base/CMakeFiles/move_base_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/move_base/CMakeFiles/move_base_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/move_base/CMakeFiles/move_base_node.dir/rule
@@ -15041,7 +15041,7 @@ all: navigation/move_base/CMakeFiles/move_base.dir/all
 
 # Build rule for subdir invocation for target.
 navigation/move_base/CMakeFiles/move_base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 navigation/move_base/CMakeFiles/move_base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : navigation/move_base/CMakeFiles/move_base.dir/rule
@@ -16052,12 +16052,12 @@ map_store/CMakeFiles/map_store_generate_messages_eus.dir/all: map_store/CMakeFil
 map_store/CMakeFiles/map_store_generate_messages_eus.dir/all: map_store/CMakeFiles/_map_store_generate_messages_check_deps_MapListEntry.dir/all
 	$(MAKE) -f map_store/CMakeFiles/map_store_generate_messages_eus.dir/build.make map_store/CMakeFiles/map_store_generate_messages_eus.dir/depend
 	$(MAKE) -f map_store/CMakeFiles/map_store_generate_messages_eus.dir/build.make map_store/CMakeFiles/map_store_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=49 "Built target map_store_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=49,50 "Built target map_store_generate_messages_eus"
 .PHONY : map_store/CMakeFiles/map_store_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 map_store/CMakeFiles/map_store_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 map_store/CMakeFiles/map_store_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : map_store/CMakeFiles/map_store_generate_messages_eus.dir/rule
@@ -16290,12 +16290,12 @@ map_store/CMakeFiles/map_store_generate_messages_lisp.dir/all: map_store/CMakeFi
 map_store/CMakeFiles/map_store_generate_messages_lisp.dir/all: map_store/CMakeFiles/_map_store_generate_messages_check_deps_MapListEntry.dir/all
 	$(MAKE) -f map_store/CMakeFiles/map_store_generate_messages_lisp.dir/build.make map_store/CMakeFiles/map_store_generate_messages_lisp.dir/depend
 	$(MAKE) -f map_store/CMakeFiles/map_store_generate_messages_lisp.dir/build.make map_store/CMakeFiles/map_store_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=50,51 "Built target map_store_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=51 "Built target map_store_generate_messages_lisp"
 .PHONY : map_store/CMakeFiles/map_store_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 map_store/CMakeFiles/map_store_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 map_store/CMakeFiles/map_store_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : map_store/CMakeFiles/map_store_generate_messages_lisp.dir/rule
@@ -16456,7 +16456,7 @@ map_store/CMakeFiles/map_store_geneus.dir/all: map_store/CMakeFiles/map_store_ge
 
 # Build rule for subdir invocation for target.
 map_store/CMakeFiles/map_store_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 map_store/CMakeFiles/map_store_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : map_store/CMakeFiles/map_store_geneus.dir/rule
@@ -16527,7 +16527,7 @@ map_store/CMakeFiles/map_store_genlisp.dir/all: map_store/CMakeFiles/map_store_g
 
 # Build rule for subdir invocation for target.
 map_store/CMakeFiles/map_store_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 map_store/CMakeFiles/map_store_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mathewmilena/multifloor_astar/build/CMakeFiles 0
 .PHONY : map_store/CMakeFiles/map_store_genlisp.dir/rule

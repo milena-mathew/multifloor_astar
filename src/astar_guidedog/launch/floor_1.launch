@@ -1,0 +1,40 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+
+    ################ map server ################
+    <arg name="map_name"/>
+    <remap from="map" to="map1"/>
+    <node pkg="map_server" name="map1_server" type="map_server" args="$(find astar)/maps/$(arg map_name)"/> 
+
+    <!-- <node pkg="map_server" name="map_server" type="map_server" args="$(find astar)/maps/map_add2box.yaml"/> -->
+    <!-- <node pkg="multi_map_navigation" type="multi_map_navigation" name="multi_map_navigation" output="screen">
+        <param name="definition_file" value="~/multifloor_astar/src/astar_guidedog/maps/two-floor.yaml" />
+        <param name="transition_types" value="" />
+        <param name="/amcl/initial_pose_x" value="9.116" />
+        <param name="/amcl/initial_pose_y" value="10.993" />
+         <param name="/amcl/initial_pose_a" value="1.546" />
+    </node> -->
+
+    ################ start astar node ################
+    <!-- <node pkg="astar" type="astar" name="astar1" output="screen">
+        <param name="Euclidean" value="true"/>
+        <param name="OccupyThresh" value="-1"/>
+        <param name="InflateRadius" value="0.22"/>
+        <param name="rate" value="10"/>
+    </node>
+
+    <param name="fixed_frame" value="/map"/>
+    <param name="marker_display_lifetime_" value="0.2"/>
+    <param name="scan_frequency" value="15"/>
+
+    <arg name="model" />
+    <arg name="gui" default="False" />
+    <param name="robot_description" textfile="/home/mathewmilena/unitree_ros/src/robots/a1_description/urdf/a1.urdf" />
+    <param name="use_gui" value="$(arg gui)"/> -->
+    
+    <!-- <node name="robot_state_publisher1" pkg="robot_state_publisher" type="state_publisher" /> -->
+
+    ################ start rviz ################
+    <!-- <node pkg="rviz" type="rviz" name="floor_1" args="-d $(find astar)/rviz/astar.rviz"/> -->
+
+</launch>

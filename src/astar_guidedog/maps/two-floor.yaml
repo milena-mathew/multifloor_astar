@@ -1,0 +1,16 @@
+start_map: map
+maps:
+    - name: map
+      north_angle: 0
+    - name: house
+      north_angle: 0
+
+wormholes:
+    - name: elevator
+      type: normal
+      locations:
+        - map: map
+          position: [6.89, -0.554]
+        - map: house 
+          position: [6.89, -0.554]
+        

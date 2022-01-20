@@ -68,7 +68,6 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationAction.py
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationActionResult.py
 multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/__init__.py
-multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py
 
 
 /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionFeedback.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
@@ -221,24 +220,6 @@ multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_naviga
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Python msg __init__.py for multi_map_navigation"
 	cd /home/mathewmilena/multifloor_astar/build/multi_map_navigation_pr2_coffee/multi_map_navigation && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg --initpy
 
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionFeedback.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionGoal.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionActionResult.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionAction.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationResult.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationActionGoal.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationGoal.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationActionFeedback.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionActionFeedback.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationFeedback.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionActionGoal.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionResult.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationAction.py
-/home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationActionResult.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mathewmilena/multifloor_astar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Python srv __init__.py for multi_map_navigation"
-	cd /home/mathewmilena/multifloor_astar/build/multi_map_navigation_pr2_coffee/multi_map_navigation && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv --initpy
-
 multi_map_navigation_generate_messages_py: multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py
 multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionFeedback.py
 multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationTransitionGoal.py
@@ -255,7 +236,6 @@ multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/d
 multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationAction.py
 multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/_MultiMapNavigationActionResult.py
 multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/msg/__init__.py
-multi_map_navigation_generate_messages_py: /home/mathewmilena/multifloor_astar/devel/lib/python2.7/dist-packages/multi_map_navigation/srv/__init__.py
 multi_map_navigation_generate_messages_py: multi_map_navigation_pr2_coffee/multi_map_navigation/CMakeFiles/multi_map_navigation_generate_messages_py.dir/build.make
 
 .PHONY : multi_map_navigation_generate_messages_py

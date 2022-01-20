@@ -1,0 +1,33 @@
+<!-- -*- mode: XML -*- -->
+<launch>
+
+    ################ map server ################
+    <!-- <node pkg="astar" type="astar" name="astar" output="screen">
+        <param name="Euclidean" value="true"/>
+        <param name="OccupyThresh" value="-1"/>
+        <param name="InflateRadius" value="0.20"/>
+        <param name="rate" value="10"/>
+    </node> -->
+
+    <node pkg="multi_map_navigation" type="multi_map_navigation" name="multi_map_navigation" output="screen">
+        <param name="definition_file" value="/home/mathewmilena/multifloor_astar/src/astar_guidedog/maps/two-floor.yaml" />
+        <param name="transition_types" value="" />
+    </node>
+
+    <arg name="user_debug" default="false"/>
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find a1_description)/xacro/robot.xacro'
+            DEBUG:=$(arg user_debug)"/>
+
+    <!-- <include file="$(find stage_multi_map_navigation)/move_base.xml"/> -->
+    <include file="$(find a1_config)/launch/include/move_base.launch"/>
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher">
+        <param name="use_gui" value="FALSE"/>
+    </node>
+
+    <node pkg="tf" type="static_transform_publisher" name="map_base_link" args="0 0 0 0 0 0 /base_link /map 0.001"/> 
+    <node pkg="tf" type="static_transform_publisher" name="base_link_odom" args="0 0 0 0 0 0 /odom /base_link 0.001"/> 
+
+    <include file="$(find a1_config)/launch/include/amcl.launch"/>
+
+    <node pkg="rviz" type="rviz" name="global_planning" args="-d $(find astar)/rviz/multifloor.rviz"/>
+</launch>

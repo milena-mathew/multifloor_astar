@@ -1,0 +1,6 @@
+package cmd_pack;
+struct cmd_lcm
+{
+    double linear;
+    double angular;
+}
